@@ -12,7 +12,7 @@ driver.get(url)  #打开网址
 time.sleep(0.2)
 
 name = "张绍翊"
-mobile = "12345678910"
+mobile = "12345678910" #听说老师不检查电话号码，但没有电话号码登不进网站
 school = "壮小"
 class_ = "六年级7班"
 
@@ -44,6 +44,7 @@ while True:   #极致速度
 for i in range(20):  #共20题
     print("第%d题  正在盲猜" %(i+1))
     time.sleep(0.1)
+    
     while True: #极致速度
         try:
             optionList = driver.find_elements_by_class_name("option_item")
@@ -59,4 +60,5 @@ else:
     driver.get_screenshot_as_file(r"C:\Users\stone\Desktop\代码\python\图片\FinishMyHomework.png")
     #答题完毕立刻截图,发给老师
     #我们快速答题后，网站懵逼，会一直叠加我们的答题时间(手动也一样)
+    
     driver.quit()
