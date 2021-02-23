@@ -57,6 +57,6 @@ for i in range(20):  #共20题
 else:
     time.sleep(1.8) #大概1.8秒后把答题速度和分数显示
     driver.get_screenshot_as_file(r"C:\Users\stone\Desktop\代码\python\图片\FinishMyHomework.png")
-    #答题完毕立刻截图
+    #答题完毕立刻截图,发给老师
     #我们快速答题后，网站懵逼，会一直叠加我们的答题时间(手动也一样)
     driver.quit()
